@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:light|Raleway:medium,bold');
+
 body {
     margin: 60px auto;
     width: 70%;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1 h2 h3 {
-    font-family: Raleway, sans-serif;
+h1, h2, h3 {
+    font-family: 'Raleway', Helvetica, sans-serif;
 }
