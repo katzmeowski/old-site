@@ -1,11 +1,117 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:light|Raleway:medium,bold');
 
-body {
-    margin: 60px auto;
-    width: 70%;
+* {
     font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3 {
     font-family: 'Raleway', Helvetica, sans-serif;
 }
+
+/* column-based layout rules */
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+	padding: 0 20px;
+}
+.col-1 {width: 8.333333%;}
+.col-2 {width: 16.666667%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.333333%;}
+.col-5 {width: 41.666667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.333333%;}
+.col-8 {width: 66.666667%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.333333%;}
+.col-11 {width: 91.666667%;}
+.col-12 {width: 100%;}
+
+.flex,
+.spread,
+.center,
+.right,
+.vertical,
+.centervertical {
+	display: flex;
+}
+
+.spread {
+	justify-content: space-between;
+}
+
+.center {
+	align-items: center;
+	justify-content: center;
+}
+
+.centervertical {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.right {
+	justify-content: flex-end;
+}
+
+.vertical {
+	flex-direction: column;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	-webkit-font-smoothing: antialiased; /* Chrome, Safari, Opera */
+}
+
+.header {
+	background-color: #000000;
+	background-image: url(../img/hero-bike.jpg);
+	background-position: center;
+	background-size: cover;
+	color: #ffffff;
+	height: 100vh;
+	position: relative;
+}
+
+.name {
+	padding: 10px 10px;
+	font-size: 18px;
+}
+
+.toolbar {
+	background-color: #000000;
+	opacity: 0.85;
+}
+
+.hero {
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	font-size: 36px;
+	-ms-transform: translate(0,-50%); /* IE 9 */
+	-webkit-transform: translate(0,-50%); /* Chrome, Safari, Opera */	
+}
+
+.footer {
+	background: #000000;
+	color: #ffffff;
+}
+
+
+
+
+
