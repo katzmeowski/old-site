@@ -1,11 +1,54 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:light|Raleway:medium,bold');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand&text=Hello.Thism');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600,800');
 
 * {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', Helvetica, sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: 'Raleway', Helvetica, sans-serif;
+/* colors
+black #d7c2bd
+accent1 (red) #f55163
+accent2 (yellow) #f2a70f
+mute shade (brick) #a5606d
+*/
+
+.flex,
+.spread,
+.center,
+.right,
+.vertical,
+.centervertical {
+	display: flex;
+	display: -webkit-flex;
+}
+
+.spread {
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+.center {
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+.centervertical {
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+.right {
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+}
+
+.vertical {
+	flex-direction: column;
+	-webkit-flex-direction: column;
 }
 
 /* column-based layout rules */
@@ -35,37 +78,6 @@ h1, h2, h3 {
 .col-10 {width: 83.333333%;}
 .col-11 {width: 91.666667%;}
 .col-12 {width: 100%;}
-
-.flex,
-.spread,
-.center,
-.right,
-.vertical,
-.centervertical {
-	display: flex;
-}
-
-.spread {
-	justify-content: space-between;
-}
-
-.center {
-	align-items: center;
-	justify-content: center;
-}
-
-.centervertical {
-	flex-direction: column;
-	justify-content: center;
-}
-
-.right {
-	justify-content: flex-end;
-}
-
-.vertical {
-	flex-direction: column;
-}
 
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -104,6 +116,17 @@ body {
 	font-size: 36px;
 	-ms-transform: translate(0,-50%); /* IE 9 */
 	-webkit-transform: translate(0,-50%); /* Chrome, Safari, Opera */	
+}
+
+.hero h1, h2 {
+  font-family: 'Shrikhand', Helvetica, sans-serif;
+  text-shadow: 4px 4px 0 #000000;
+}
+
+.about {
+	font-size: 16px;
+	margin: 20px;
+	outline: 1px;
 }
 
 .footer {
