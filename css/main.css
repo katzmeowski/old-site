@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Shrikhand&text=Hello.Thism');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600,800');
 
 * {
@@ -6,10 +6,11 @@
 }
 
 /* colors
-black #d7c2bd
+white #ffffff
+black #212023
+gray #98918f
 accent1 (red) #f55163
 accent2 (yellow) #f2a70f
-mute shade (brick) #a5606d
 */
 
 .flex,
@@ -97,7 +98,7 @@ h5 {
 }
 
 .header {
-	background-color: #000000;
+	background-color: #212023;
 	background-image: url(../img/hero-bike.jpg);
 	background-position: center;
 	background-size: cover;
@@ -112,7 +113,7 @@ h5 {
 }
 
 .toolbar {
-	background-color: #000000;
+	background-color: #212023;
 	opacity: 0.85;
 }
 
@@ -128,7 +129,7 @@ h5 {
 
 .hero h1, h2 {
   font-family: 'Shrikhand', Helvetica, sans-serif;
-  text-shadow: 4px 4px 0 #000000;
+  text-shadow: 4px 4px 0 #f2a70f;
 }
 
 .about {
@@ -162,7 +163,7 @@ h5 {
 }
 
 .footer {
-	background: #000000;
+	background: #212023;
 	color: #ffffff;
 }
 
